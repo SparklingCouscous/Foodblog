@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM public.ecr.aws/docker/library/node:latest
 ENV NODE_ENV=production
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "./"]
